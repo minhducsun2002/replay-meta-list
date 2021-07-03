@@ -162,8 +162,10 @@ async fn main() {
             );
             let result = executor::block_on(future_result);
 
+            println!("   Uploaded successfully.");
             match result {
                 Ok(_) => {
+                    println!("   Uploading document");
                     let result = collection.find_one_and_replace(
                         doc! { "sha256": hash },
                         json_replay,
