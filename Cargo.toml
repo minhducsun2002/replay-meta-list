@@ -1,5 +1,5 @@
 [package]
-name = "replay-metadata"
+name = "replay-meta-list"
 version = "0.1.0"
 authors = ["minhducsun2002 <32769878+minhducsun2002@users.noreply.github.com>"]
 edition = "2018"
@@ -10,3 +10,19 @@ edition = "2018"
 osu-db = "0.2.0"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
+sha2 = "0.9.5"
+hex = "0.4.3"
+rayon = "1.5.1"
+dotenv = "0.15.0"
+radix_trie = "0.2.1"
+rusoto_s3 = "0.47.0"
+rusoto_core = "0.47.0"
+futures = { version = "0.3.15", features = [ "executor" ] }
+tokio = { version = "1.8.0", features = [ "macros" ] }
+rusoto_credential = "0.47.0"
+
+
+[dependencies.mongodb]
+version = "2.0.0-beta.2"
+default-features = false
+features = ["sync"]
